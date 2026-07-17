@@ -5,3 +5,4 @@ requests==2.34.2
 urllib3==2.7.0
 numpy==2.4.4
 pillow==12.2.0
+pytz==2026.2
