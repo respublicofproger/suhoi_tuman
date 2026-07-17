@@ -5,6 +5,9 @@ from analytics import make_stats
 from parser import parse_dataframe
 from downloader import VendotekDownloader
 import json
+import pytz
+
+moscow_tz = pytz.timezone('Europe/Moscow')
 
 def money(value):
     return f"{value:,.0f}".replace(",", " ") + " ₽"
@@ -35,7 +38,7 @@ with col1:
             
             if df is not None:
                 st.session_state['raw_data'] = df
-                st.session_state['last_update'] = datetime.now()
+                st.session_state['last_update'] = datetime.now(moscow_tz)
                 st.success(f"✅ Данные загружены: {len(df)} транзакций")
             else:
                 st.error("❌ Ошибка загрузки данных")
