@@ -219,6 +219,7 @@ try:
                         scales: {{
                             x: {{
                                 ticks: {{
+                                    offset:true,
                                     maxRotation: 45,
                                     minRotation: 45,
                                     font: {{ size: 11 }},
