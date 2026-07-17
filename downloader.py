@@ -62,7 +62,7 @@ class VendotekDownloader:
         self.session.cookies.set('_ym_uid', '1783533097845316583')
         self.session.cookies.set('_ym_d', '1783533097')
         self.session.cookies.set('_ym_isad', '2')
-        self.session.cookies.set('tms_v3_auth_cookie', 'wo36CI249yi4F02+QggYMd1E9FXwlAy8vrHO7LVh5p/A852qMXQskuovvQyqxLswU1LYkTQmjPSyUx92e+Mz5kT2ytW+GZVLsHL1id5wRUI=')
+        self.session.cookies.set('tms_v3_auth_cookie', 'gm1ojKUgkkwN8G92Q8kWrjHhJ5oySrcXIEAE245ujcY3KJ0sSi9PN0oJ/jXl90eOTboV/uEZ+ZVSzOrX/drE9JKvR0tHUYjYuTxoQxBC7EA=')
         print("✅ Установлена стандартная кука")
     
     def save_cookie(self, cookie_value):
